@@ -1,0 +1,22 @@
+<!-- eduapp/templates/homepage.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+</head>
+<body>
+    <h1>Welcome to EduTech</h1>
+    <div class="image-container">
+        <img src="{% static 'images/edu.jpg' %}">
+    </div>
+    <nav>
+        <a href="{% url 'products' %}">Products/Services</a>
+
+        <a href="{% url 'contact_us' %}">Contact Us</a>
+    </nav>
+</body>
+</html>
+
